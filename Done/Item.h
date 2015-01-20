@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class User;
 
 @interface Item : NSManagedObject
 
@@ -16,5 +17,6 @@
 @property (nonatomic, retain) NSNumber * done;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSDate * updatedAt;
+@property (nonatomic, retain) User *user;
 
 @end
